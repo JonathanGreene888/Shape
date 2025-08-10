@@ -3,10 +3,10 @@ package sphere;
 import shape.Shape;
 
 public class Sphere extends Shape {
-	int radius; 
+	double radius; 
 	
 	 // Parameterized constructor
-    public Sphere(int radius) {
+    public Sphere(double radius) {
         this.radius = radius;
     
     }
@@ -14,13 +14,13 @@ public class Sphere extends Shape {
 	@Override
 	public double surface_area() {
 		
-		return 4 * Math.PI * (radius * radius);
+		return 4.0 * Math.PI * (radius * radius);
 	}
 
 	@Override
 	public double volume() {
 
-		return (4/3) * Math.PI * (radius * radius * radius);
+		return (4.0/3.0) * Math.PI * (radius * radius * radius);
 	}
 	
 	
@@ -28,7 +28,7 @@ public class Sphere extends Shape {
     	 // prints out surface area and volume.
     	 double volume = volume();
     	 double surface_area = surface_area();
-		return ("Volume is: "+ volume + " Surface Area: " + surface_area );
+		return ("Sphere is: " + "Volume is: "+ volume + " Surface Area: " + surface_area );
     	 
      }
 }
