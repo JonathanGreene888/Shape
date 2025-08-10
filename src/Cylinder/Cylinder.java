@@ -1,4 +1,4 @@
-package Cylinder;
+package cylinder;
 
 public class Cylinder {
 
